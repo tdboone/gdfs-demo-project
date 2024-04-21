@@ -6,9 +6,9 @@ export AWS_DEFAULT_REGION=us-west-2
 cd ./local-lfs-server
 
 cargo run -- \
-  --cache-dir cache \
-  --host localhost:8080 \
+  --cache-dir ./cache \
+  --port 8080 \
   --max-cache-size 10GiB \
   s3 \
-  --bucket game-dev-fun-size-git-lfs-storage/demo-project/
+  --bucket game-dev-fun-size-git-lfs-storage
   
